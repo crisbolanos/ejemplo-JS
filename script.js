@@ -41,6 +41,7 @@ form.addEventListener('submit', btnOnclick);
 function btnOnclick(event) {
     console.log(event);
     event.preventDefault();
-    const sumaInputs = input1.value + input2.value;
+    const sumaInputs = parseInt( input1.value) + parseInt( input2.value);
     pResult.innerText = "Resultado " + sumaInputs;
 }
+
