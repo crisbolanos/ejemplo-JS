@@ -36,10 +36,12 @@ const input2 = document.querySelector('#calculo2');
 const btn = document.querySelector('#btnCalcular');
 const pResult = document.querySelector('#result');
 
+
+
 form.addEventListener('submit', btnOnclick);
 
 function btnOnclick(event) {
-    console.log(event);
+    //console.log(event);
     event.preventDefault();
     const sumaInputs = parseInt( input1.value) + parseInt( input2.value);
     pResult.innerText = "Resultado " + sumaInputs;
